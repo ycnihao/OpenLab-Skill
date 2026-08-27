@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenLab Skill"
+  short_description: "Main-agent workflow for verified lab reports"
+  default_prompt: "Use $openlab-skill to initialize this experiment project, confirm each main stage with me, and produce a verified report package."
