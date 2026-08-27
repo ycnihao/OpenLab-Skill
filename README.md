@@ -2,7 +2,7 @@
 
 [中文说明](README.zh-CN.md)
 
-OpenLab Skill is an open agent skill for experiment and course-report writing, inspired by the practice of using an agent to deliver an entire experiment report end-to-end. Its goal is to raise efficiency and leave the truly important time to observing the experiment process and thinking about the results.
+OpenLab Skill is an open agent skill framework for experiment and course-report writing, inspired by the practice of using an agent to deliver an entire experiment report end-to-end. Its goal is to raise efficiency and leave the truly important time to observing the experiment process and thinking about the results.
 
 OpenLab Skill is a generic skill. It abstracts the base process of a typical experiment and can serve as a simple framework for extracting your own workflow skills later. Its principle is a single, self-contained four-stage main spine (Initialization → Clarify requirements → Processing → Completion). The main agent never assumes the user's intent: at each stage it waits for the user to choose Continue, Return, Other, or Stop. Any input other than those four explicit choices is treated as Other and routed to a free-input subagent capped at two rounds. Toolchain installation and unexpected situations during the experiment are wrapped as subagents that run until they succeed. Choosing Stop at any stage exits the skill. The diagram below illustrates this.
 
